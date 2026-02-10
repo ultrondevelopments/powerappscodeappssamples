@@ -1,0 +1,33 @@
+{
+  "appId": "88d082f3-6fcf-4a46-ac31-e2593218dbf0",
+  "appDisplayName": "Service Desk App",
+  "description": null,
+  "environmentId": "f0494b28-64e6-e625-a863-60585cb2ed0c",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "region": "prod",
+  "connectionReferences": {
+    "8e788031-211b-4a7a-ab32-f76fac796692": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "tickets": {
+          "entitySetName": "cr76d_tickets",
+          "logicalName": "cr76d_ticket"
+        }
+      },
+      "environmentVariableName": ""
+    }
+  },
+  "version": "1.0"
+}
